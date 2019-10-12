@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!208 &6406610543778025357
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479423954653890794}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.18, y: 1, z: 0.59}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.44, y: 1, z: -0.05}
+  m_TimeToStationary: 0.5
+--- !u!114 &-2475195826065636439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479423954653890794}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce0a65e77b4eeeab0c3374a9ba387d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 6
+  _description: Wood must be collected when ready.
+  _cost:
+  - Resource: {fileID: 11400000, guid: e01937471d3ce874c971c62d4d1ecd03, type: 2}
+    Value: 1
+  - Resource: {fileID: 11400000, guid: 1d9df1028c677c54c8d500c57a7562b7, type: 2}
+    Value: 2
+  _consumption:
+  - Resource: {fileID: 11400000, guid: 8ce7f1d63bbbc7341ab3f062f7dcb707, type: 2}
+    Value: 4
+  _production:
+  - Resource: {fileID: 11400000, guid: e01937471d3ce874c971c62d4d1ecd03, type: 2}
+    Value: 10
+  _productionCycleLength: 20
+--- !u!114 &708670627072087011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479423954653890794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e61ae2ed670486da59bc5bb0f5cefad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _template: {fileID: 7787080708263016921, guid: 01640ca94625d3f4099c2b3e21935ddb,
+    type: 3}
+--- !u!1001 &8468645942310605283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_Name
+      value: Woodcutter
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1585a863d84cd0847bf2dedcef8cf9a2, type: 3}
+--- !u!1 &479423954653890794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1585a863d84cd0847bf2dedcef8cf9a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8468645942310605283}
+  m_PrefabAsset: {fileID: 0}

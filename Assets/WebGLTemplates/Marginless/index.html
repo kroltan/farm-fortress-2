@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>%UNITY_WEB_NAME%</title>
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%");
+      var _gameCanvas = null;
+      window.addEventListener("resize", function() {
+        if (_gameCanvas == null) {
+          _gameCanvas = document.getElementById("#canvas");
+        }
+
+        if (_gameCanvas == null) {
+          // Dont resize while game not loaded!
+          return;
+        }
+
+        var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        _gameCanvas.width = width;
+        _gameCanvas.height = height;
+      });
+    </script>
+    <style>
+        html, body, #gameContainer, #canvas {
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px; margin: auto"></div>
+  </body>
+</html>

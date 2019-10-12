@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LD45/Scenes/menu.unity
+    guid: 0a455c9a736db4e47a023dccc61c5155
+  - enabled: 1
+    path: Assets/LD45/Scenes/blackforest.unity
+    guid: 2f586da604f1f834596aa8ffc6e714ef
+  - enabled: 1
+    path: Assets/LD45/Scenes/cliff.unity
+    guid: b3f63e3fd0b32ef4690f627fa180a215
+  - enabled: 1
+    path: Assets/LD45/Scenes/hills.unity
+    guid: 3283f3ae7ef1cd843b8304721f60ae25
+  m_configObjects: {}
